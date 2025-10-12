@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Portfolio</title>
+  <link rel="icon" href="./favicon.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- cdn link -->
+
+
+</head>
+
+<body>
+  <!-- Navbar  Start-->
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html"><img src="./JSlogo.png" alt="" width="100px"></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+     
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Advanced Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://website-embedsocial-byhk.netlify.app/"
+                  target="_blank">Embedsocial Website</a></li>
+              <li><a class="dropdown-item" href="https://assignment3byhk.netlify.app/" target="_blank">Gadeg Groove
+                  Website </a></li>
+              <li><a class="dropdown-item" href="https://hooriafatima-mwad-hackathone.netlify.app/"
+                  target="_blank">Positivus Website</a></li>
+              <li><a class="dropdown-item" href="https://hk-resume-ui-design.netlify.app/" target="_blank">Resume</a>
+              </li>
+              <li><a class="dropdown-item" href="https://assignment4-part1-ludo-club.vercel.app/"
+                  target="_blank">ludoo</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+<input class="form-control me-2" type="search" id="searchInput" placeholder="Search Projects..." aria-label="Search" />
+          <button class="btn btn-outline-success bg-success text-black  " type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+<div id="searchResults" class="search-overlay"></div>
+
+
+
+  <!-- Sider Start -->
+
+  <div class="container mt-4">
+    <div class="row align-items-center">
+
+      <!-- Right: Card List -->
+      <div class="col-md-3  co">
+        <div class="card shadow p-3">
+          <h5 class="text-center mb-3">Projects List</h5>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#project1" class="project-link">TO DO List</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project2" class="project-link">Number Guess Game</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project3" class="project-link">Product Search Input</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project4" class="project-link">ATM Machine</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project5" class="project-link">Weather Card</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project6" class="project-link">Random Ayat Generator</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project7" class="project-link">Slider</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project8" class="project-link">Multi Task</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#project9" class="project-link">Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===== Left: Video Carousel (PearlHovia Projects Showcase) ===== -->
+<div class="col-md-8">
+  <div id="carouselExampleCaptions" class="carousel slide shadow rounded-4 overflow-hidden" data-bs-ride="carousel">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1: ATM Machine -->
+      <div class="carousel-item active">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/7tkN8VqkTtE?autoplay=1&mute=1&loop=1" title="ATM Machine Project" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h5>ATM Machine Simulation</h5>
+          <p>Perform deposits, withdrawals, and balance checks with a smart UI.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: Random Quran Ayat Generator -->
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/mQvZfXCeJqY?autoplay=1&mute=1&loop=1" title="Random Quran Ayat Generator" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h5>Random Quran Ayat Generator</h5>
+          <p>Shows Quranic verses with translation each time you click.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Portfolio -->
+      <div class="carousel-item">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/ZU8c2S8MBeI?autoplay=1&mute=1&loop=1" title="Portfolio Website" allowfullscreen></iframe>
+        </div>
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h5>My Portfolio Website</h5>
+          <p>Explore my web development projects and creative journey.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Slider End -->
+
+  <!-- Project Card Start -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4 text-warning fw-bold">My JavaScript Projects</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 col-sm-6" id="project1">
+        <div class="card shadow h-100 text-center">
+          <img src="./todo.jpg" class="card-img-top" alt="TO DO List">
+          <div class="card-body">
+            <h5 class="card-title">To Do List</h5>
+            <p class="card-text">Manage your daily tasks efficiently with this simple to-do app.</p>
+            <a href="https://multitask-todolist-byhk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project2">
+        <div class="card shadow h-100 text-center">
+          <img src="./quranic.jpg" class="card-img-top" alt="Random Ayat Generator">
+          <div class="card-body">
+            <h5 class="card-title">Random Ayat Generator</h5>
+            <p class="card-text">Displays random Quranic verses with translation each time.</p>
+            <a href="https://random-ayat-gen-bbyhk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project3">
+        <div class="card shadow h-100 text-center">
+          <img src="./ngg.png" class="card-img-top" alt="Number Guess Game">
+          <div class="card-body">
+            <h5 class="card-title">Number Guess Game</h5>
+            <p class="card-text">A fun number guessing game built using JavaScript logic.</p>
+            <a href="https://number-guess-game-byhk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project4">
+        <div class="card shadow h-100 text-center">
+          <img src="./atm.png" class="card-img-top" alt="ATM Machine">
+          <div class="card-body">
+            <h5 class="card-title">ATM Machine</h5>
+            <p class="card-text">Simulate ATM transactions — deposit, withdraw, and balance check.</p>
+            <a href="https://atm-machine-by-hk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project5">
+        <div class="card shadow h-100 text-center">
+          <img src="./search.png" class="card-img-top" alt="Product Search Input">
+          <div class="card-body">
+            <h5 class="card-title">Product Search Input</h5>
+            <p class="card-text">Smart app that filters items as you type, making shopping easier.</p>
+            <a href="https://productcard-searchinput.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project6">
+        <div class="card shadow h-100 text-center">
+          <img src="./wheather.jpg" class="card-img-top" alt="Weather App">
+          <div class="card-body">
+            <h5 class="card-title">Weather Card</h5>
+            <p class="card-text">Real-time weather updates with dynamic background changes.</p>
+            <a href="https://wheathercard.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project7">
+        <div class="card shadow h-100 text-center">
+          <img src="./sIider.jpg" class="card-img-top" alt="Slider">
+          <div class="card-body">
+            <h5 class="card-title">Image Slider</h5>
+            <p class="card-text">Smooth and stylish image carousel using JavaScript and Bootstrap.</p>
+            <a href="https://slider-byhk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project8">
+        <div class="card shadow h-100 text-center">
+          <img src="./quiz.jpg" class="card-img-top" alt="Quiz App">
+          <div class="card-body">
+            <h5 class="card-title">Quiz App</h5>
+            <p class="card-text">Interactive quiz app that checks your score instantly.</p>
+            <a href="https://quiz-bybhk.netlify.app/" target="_blank" class="btn btn-warning text-dark fw-semibold">View
+              Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" id="project9">
+        <div class="card shadow h-100 text-center">
+          <img src="./muti task.jpg" class="card-img-top" alt="Multi Task App">
+          <div class="card-body">
+            <h5 class="card-title">Multi Task</h5>
+            <p class="card-text">A multi-feature app combining calculator, timer, and notes.</p>
+            <a href="https://multi-task-math-byhk.netlify.app/" target="_blank"
+              class="btn btn-warning text-dark fw-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Project Card End -->
+
+
+
+  <!-- Promotion  Banner  PearlHovia Start-->
+
+<section class="scroll-offer-banner">
+  <div class="scroll-text">
+    ✨ Discover Elegance with <span>PearlHovia</span> — 
+    Your Destination for Premium Custom Products 👕💫 —
+    Shop Now & Shine with Style! 💖
+  </div>
+
+
+</section>
+  <div class="btnn">
+      <a href="https://www.instagram.com/pearlhovia/" target="_blank" class="shop-btn">Shop Now</a>
+
+  </div>
+
+  <!-- Promotion  Banner  PearlHovia ENd  -->
+
+  <!-- 🌿 Footer Start -->
+<footer class="footer mt-5 text-center text-white">
+  <div class="container py-5">
+    <h4 class="fw-bold mb-3">💻 Hooria Fatima – JavaScript Portfolio</h4>
+    <p class="mb-4">
+      Explore my creative projects built with passion, logic, and JavaScript! 🚀
+    </p>
+
+    <!-- Social Links -->
+    <div class="social-icons mb-4">
+      <a href="https://www.instagram.com/hooria_codehub/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/hooria-fatima-54753927b/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/HKMentor" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="mailto:infohkmentor@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+
+    <hr class="border-light">
+    <p class="mb-0 small">
+      © 2025 <strong>Hooria Fatima</strong> | Crafted with ❤️ & JavaScript.
+    </p>
+  </div>
+</footer>
+<!-- 🌿 Footer End -->
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const projectCards = document.querySelectorAll(".container.my-5 .col-md-4");
+    const searchResults = document.getElementById("searchResults");
+
+    searchInput.addEventListener("input", function (e) {
+      const searchTerm = e.target.value.toLowerCase().trim();
+      searchResults.innerHTML = ""; // reset overlay results
+      let anyMatch = false;
+
+      if (searchTerm === "") {
+        searchResults.classList.remove("active"); // hide overlay
+        return;
+      }
+
+      projectCards.forEach(card => {
+        const title = card.querySelector(".card-title")?.textContent.toLowerCase() || "";
+        const desc = card.querySelector(".card-text")?.textContent.toLowerCase() || "";
+
+        if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+          const clone = card.cloneNode(true); // copy card
+          clone.style.display = "block";
+          searchResults.appendChild(clone);
+          anyMatch = true;
+        }
+      });
+
+      if (anyMatch) {
+        searchResults.classList.add("active"); // show overlay
+      } else {
+        searchResults.innerHTML = `<h4 class="text-center text-muted mt-4">No Match Found!</h4>`;
+        searchResults.classList.add("active");
+      }
+    });
+
+    // Jab user input hataaye to overlay band ho jaye
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest("#searchResults") && !e.target.closest("#searchInput")) {
+        searchResults.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

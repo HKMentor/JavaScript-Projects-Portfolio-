@@ -1,0 +1,289 @@
+.card {
+  border-radius: 15px;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #2c6196;
+  cursor: pointer;
+}
+.project-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.project-link:hover {
+  color: #c7d6ec; /* Bootstrap blue */
+  transform: translateX(5px);
+}
+
+/* project card */
+.card {
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #108d48; /* Added green border */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(16, 141, 72, 0.2); /* Replaced golden with green tone */
+  transform: skewX(-25deg);
+  transition: left 0.7s ease;
+}
+
+.card:hover::before {
+  left: 125%;
+}
+
+.card:hover {
+  transform: translateY(10px) rotateX(5deg);
+  box-shadow: 0 15px 25px rgba(16, 141, 72, 0.4); /* Added green glow */
+}
+
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(8px); /* ↓ Goes slightly down on hover (pressed effect) */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.btn-warning {
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+
+/* search input */
+
+/* 🌿 Search Overlay (front on search) */
+.search-overlay {
+  position: fixed;
+  top: 80px; /* navbar ke niche start hoga */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: rgba(255, 255, 255, 0.97);
+  overflow-y: auto;
+  z-index: 9999;
+  padding: 30px 0;
+  display: none;
+}
+
+/* Jab search active ho to overlay show */
+.search-overlay.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Smooth animation for overlay */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌿 Cards inside search overlay */
+.search-overlay .card {
+  border: 2px solid #108d48;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.search-overlay .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(16, 141, 72, 0.3);
+}
+
+/* Card image styling */
+.search-overlay .card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Center content in overlay */
+.search-overlay .row {
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Optional: scrollbar styling */
+.search-overlay::-webkit-scrollbar {
+  width: 8px;
+}
+.search-overlay::-webkit-scrollbar-thumb {
+  background: #108d48;
+  border-radius: 10px;
+}
+/* promotion card */
+
+.scroll-offer-banner {
+  background:rgb(0, 157, 255);
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 4.1rem;
+  font-weight: 500;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 18s linear infinite;
+}
+
+.scroll-text span {
+  color: #ffeb3b;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hover effect */
+.scroll-offer-banner:hover {
+  background: linear-gradient(90deg, #0b7037, #108d48);
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Shop Now Button */
+.btnn {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  font-size: 2em;
+  font-weight: 400;
+  padding:10px;
+  margin: 20px;
+  width: 200px;
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  color: #e5ece8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* footer */
+.footer {
+  background: linear-gradient(135deg, #108d48, #0b5f32);
+  color: #fff;
+  border-top: 4px solid #c4ffda;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer h4 {
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  color: #f0f0f0;
+  font-size: 0.95rem;
+}
+
+/* 🌿 Social Icons */
+.footer .social-icons a {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 12px;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #c4ffda;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Line animation */
+.footer hr {
+  opacity: 0.3;
+  width: 60%;
+  margin: 1.5rem auto;
+  border-color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer h4 {
+    font-size: 1.2rem;
+  }
+  .footer .social-icons a {
+    font-size: 1.4rem;
+  }
+}
+
+/* 
+/* video sIdier */
+.carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.carousel iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.carousel-caption h5 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.carousel-caption p {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+} */
