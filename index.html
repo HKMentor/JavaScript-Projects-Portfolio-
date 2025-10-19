@@ -13,11 +13,18 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- cdn link -->
+<!-- Font Awesome Link  -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
 
 
 </head>
 
-<body>
+<body> 
+
+
   <!-- Navbar  Start-->
   <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid">
@@ -301,6 +308,10 @@
   </div>
 
   <!-- Promotion  Banner  PearlHovia ENd  -->
+  <!-- Back to Top Button -->
+<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+
 
   <!-- 🌿 Footer Start -->
 <footer class="footer mt-5 text-center text-white">
@@ -373,6 +384,23 @@
   });
 </script>
 
+<script>
+window.addEventListener("scroll", function() {
+  const backToTop = document.getElementById("backToTop");
+  if (window.scrollY > 100) {
+    backToTop.style.display = "flex";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+document.getElementById("backToTop").addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
 
 
   <script src="./script.js"></script>
