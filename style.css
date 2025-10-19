@@ -264,7 +264,7 @@
   }
 }
 
-/* 
+
 /* video sIdier */
 .carousel {
   border-radius: 20px;
@@ -286,4 +286,4 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1);
-} */
+}
